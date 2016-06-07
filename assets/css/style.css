@@ -222,8 +222,24 @@ input {
 
 .h .logo {
 	margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 0px;
 	padding-bottom: 70px;
+}
+
+.h .logo i {
+    margin-top:9px;
+    font-size: 15px;
+    margin-right:5px;
+
+
+}
+
+.h .logo a {
+    color:white;
+}
+
+.h .logo a:hover {
+    color:#1b6796;
 }
 
 .h .logo h2{
@@ -328,11 +344,12 @@ input {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background-color: #22A7F0;
+
 }
 
 #f i {
 	margin-right: 30px;
-	font-size: 35px;
+	font-size: 27px;
 }
 
 #f a {
