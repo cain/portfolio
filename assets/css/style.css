@@ -63,7 +63,7 @@ body {
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
-.ptb {padding-top: 80px; padding-bottom: 80px;}
+.ptb {padding-top: 80px; padding-bottom: 0px;}
 
 .clear {
 	clear: both;
@@ -158,6 +158,12 @@ input {
 	background: transparent;
 	color: white;
 	border: 2px solid white;
+}
+
+.btn-clear-black {
+    	background: transparent;
+	color: black;
+	border: 2px solid black;
 }
 .btn-clear:hover {
 	background: white;
@@ -320,7 +326,7 @@ input {
 
 /* CONTACT SEPARATOR */
 #sep {
-	background: url(../img/sep.jpg) no-repeat center top;
+
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
@@ -337,11 +343,15 @@ input {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
+    color: black;;
+
 }
 
+#sep h1 {
+    font-weight: 700;
+}
 #sep h3 {
-	font-weight: 300;
+	font-weight: 700;
 	letter-spacing: 2px;
 }
 
@@ -452,4 +462,12 @@ margin:auto;
     height: 1px;
     border-top: rgba(0, 0, 0, 0.1) 1px solid;
     border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+}
+
+.map {
+    height:100%;
+}
+
+#map {
+    height:450px
 }

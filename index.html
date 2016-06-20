@@ -86,15 +86,10 @@
     </div><!--js-->
     </div><!--H-->
 
-    <div class="container ptb" style="display:none;">
+    <div class="container ptb" style="">
       <div class="row">
         <h2 class="centered mb">I like to make elegant sites & clean designs<br/>that help other people grow.</h2>
-        <div class="col-md-6" >
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div><!--/col-md-6-->
-        <div class="col-md-6" >
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
-        </div><!--/col-md-6-->
+
       </div><!--/row-->
     </div><!-- /.container -->
     <div class="container">
@@ -118,14 +113,26 @@
     <div class="portfolio-centered mt">
       <div class="recentitems portfolio">
 
-      
+              <div class="portfolio-item books">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/portfolio/portfolio_02.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">ASFRU Arma Clan Website</h3>
+                <a  href="/asfru.html" class="dmbutton a2" data-animate="fadeInUp">View</a>
+                
+              </div><!-- he bg -->
+            </div><!-- he view -->    
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+          
         <div class="portfolio-item books">
           <div class="he-wrap tpl6">
           <img src="assets/img/portfolio/portfolio_10.jpg" class="img-responsive" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">Australian Barefoot Logo</h3>
-                <a  href="#" class="dmbutton a2" data-animate="fadeInUp">View</a>
+                <a  href="/australian-barefoot-championships.html" class="dmbutton a2" data-animate="fadeInUp">View</a>
                 
               </div><!-- he bg -->
             </div><!-- he view -->    
@@ -158,18 +165,7 @@
           </div><!-- he wrap -->
         </div><!-- end col-12 -->
           
-        <div class="portfolio-item books">
-          <div class="he-wrap tpl6">
-          <img src="assets/img/portfolio/portfolio_02.jpg" class="img-responsive" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">ASFRU Arma Clan Website</h3>
-                <a  href="/asfru.html" class="dmbutton a2" data-animate="fadeInUp">View</a>
-                
-              </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+
         
 
 
@@ -200,17 +196,35 @@
       </div><!--/container-->
     </div><!--/.G-->
 
-    <div id="sep">
-      <div class="container">
-        <div class="row centered">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>Get in Touch </h1>
-            <h3 class="mb">If you have any questions or  inquiries email<br/>contact@cainhall.me</h3>
-            <a href="mailto:contact@cainhall.me"><button class="btn btn-conf btn-clear"><i class="fa fa-envelope-o"></i> Contact me</button></a>
-          </div>
-        </div><!--/row-->
-      </div><!--/container-->
+    <div id="sep" style="z-index: 3; position:absolute; ">
+
+          <div class="container" >
+            <div class="row centered">
+              <div class="col-md-8 col-md-offset-2" style="">
+                    <h1>Get in Touch </h1>
+                    <h3 class="mb">If you have any questions or  inquiries email<br/>contact@cainhall.me</h3>
+                    <a href="mailto:contact@cainhall.me"><button class="btn btn-conf btn-clear-black" style="color:black;"><i class="fa fa-envelope-o"></i> Contact me</button></a>
+              </div>
+            </div><!--/row-->
+          </div><!--/container-->
+
     </div><!--/.sep-->
+<div id="map" style="position:relative;;"></div>
+      
+            <script>
+        function initMap() {
+          var mapDiv = document.getElementById('map');
+          var map = new google.maps.Map(mapDiv, {
+              center: {lat: -33.92092, lng: 150.92314},
+              zoom: 11,
+              disableDefaultUI: true,
+              draggable: false,
+              scrollwheel: false
+          });
+        }
+    </script>
+      
+
 <div class="colours"></div>
     <div id="f">
       <div class="container">
@@ -230,6 +244,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+          <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSF9u3vovZnUwH9S7sn1VcsYJRRjL1o00&callback=initMap">
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/retina-1.1.0.js"></script>
